@@ -6,4 +6,79 @@
     android:layout_height="match_parent"
     tools:context=".AddNewGoalActivity">
 
+    <Button
+        android:id="@+id/addNewGoalAddButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/addNewGoalReturnImageView"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_previous" />
+
+    <TextView
+        android:id="@+id/addNewGoalDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Goal Description:"
+        app:layout_constraintStart_toStartOf="@+id/addNewGoalDescriptionEditText"
+        app:layout_constraintTop_toBottomOf="@+id/addNewGoalReturnImageView" />
+
+    <EditText
+        android:id="@+id/addNewGoalDescriptionEditText"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Describe your goal!"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addNewGoalDescriptionTextView" />
+
+    <TextView
+        android:id="@+id/addNewGoalDayCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Repeat for"
+        app:layout_constraintStart_toStartOf="@+id/addNewGoalDescriptionEditText"
+        app:layout_constraintTop_toBottomOf="@+id/addNewGoalDescriptionEditText" />
+
+    <EditText
+        android:id="@+id/addNewGoalDayCountEditText"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/addNewGoalDayCountTextView"
+        app:layout_constraintStart_toEndOf="@+id/addNewGoalDayCountTextView"
+        app:layout_constraintTop_toTopOf="@+id/addNewGoalDayCountTextView" />
+
+    <TextView
+        android:id="@+id/addNewGoalDaytextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="days"
+        app:layout_constraintBottom_toBottomOf="@+id/addNewGoalDayCountTextView"
+        app:layout_constraintStart_toEndOf="@+id/addNewGoalDayCountEditText"
+        app:layout_constraintTop_toTopOf="@+id/addNewGoalDayCountTextView" />
+
+
 </android.support.constraint.ConstraintLayout>
