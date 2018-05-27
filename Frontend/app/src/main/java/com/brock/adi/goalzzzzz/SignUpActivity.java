@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 
+import com.brock.adi.goalzzzzz.entities.User;
+
 public class SignUpActivity extends AppCompatActivity {
 
     @Override
@@ -31,7 +33,9 @@ public class SignUpActivity extends AppCompatActivity {
                 next.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        // create new user
+                        User user = GoalsApp.instance.appRepo.currentUser.getValue();
+                        user.user_name = editTextUsername.getText().toString();
+                        GoalsApp.instance.appRepo.currentUser.postValue(user);
                     }
                 });
             }
