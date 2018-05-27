@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "/D/astudio/queenB2018/Frontend/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/reem/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/c4caa093951feb6c64ee5fb4103ae68d/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/home/reem/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/34c3a42ea977f0301485b9d24e33d43d/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                }
+            ]
+        }
+    ]
+}
