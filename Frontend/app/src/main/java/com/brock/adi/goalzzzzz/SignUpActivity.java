@@ -1,5 +1,6 @@
 package com.brock.adi.goalzzzzz;
 
+import android.content.Intent;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,10 +13,18 @@ import android.widget.ImageView;
 import com.brock.adi.goalzzzzz.entities.User;
 
 public class SignUpActivity extends AppCompatActivity {
-
+    private void goTONextActivity(){
+        Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
+        startActivity(intent);
+        this.finish();
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (GoalsApp.instance.appRepo.currentUser.getValue().user_name != null){
+            goTONextActivity();
+        }
+
         setContentView(R.layout.activity_sign_up);
 
         final ImageView next = findViewById(R.id.nextSignUp);
@@ -36,6 +45,7 @@ public class SignUpActivity extends AppCompatActivity {
                         User user = GoalsApp.instance.appRepo.currentUser.getValue();
                         user.user_name = editTextUsername.getText().toString();
                         GoalsApp.instance.appRepo.currentUser.postValue(user);
+                        goTONextActivity();
                     }
                 });
             }
