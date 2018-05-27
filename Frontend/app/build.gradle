@@ -36,4 +36,7 @@ dependencies {
     implementation "com.android.support:recyclerview-v7:$supportVersion"
     implementation "com.android.support:appcompat-v7:$supportVersion"
     implementation "com.android.support:design:$supportVersion"
+
+    // gson
+    implementation 'com.google.code.gson:gson:2.8.2'
 }
