@@ -29,6 +29,9 @@ def make_new_user():
     new_user = User()
     id = new_user.getId()
     str_id = id
+    json_user = json.dumps(new_user)
+    with open(id, 'w') as f:
+        
     return str_id
 
 @app.route("/user/<uid>/edit", methods=['POST'])
