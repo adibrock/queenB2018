@@ -3,6 +3,8 @@ package com.brock.adi.goalzzzzz;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.brock.adi.goalzzzzz.entities.User;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
