@@ -23,6 +23,7 @@ public class SignUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         if (GoalsApp.instance.appRepo.currentUser.getValue().user_name != null){
             goTONextActivity();
+            return;
         }
 
         setContentView(R.layout.activity_sign_up);
